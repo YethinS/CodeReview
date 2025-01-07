@@ -1,1 +1,7 @@
+#Code Review
 
+1. First one should be the error handling  - Whenever using async await need to use try/catch block to catch the error and not to break the application
+2. Need to move out the api function definitions outside the useEffect for performance upgrade.
+3. Generalize the method fetchProducts, fetchVariants, fetchReviews.
+4. Instead of using document.getElementById we can use the react hook useRef for better compatibility.
+5. Need to check whether the api responses are fullfilled before using it like this product?.imageUrl
